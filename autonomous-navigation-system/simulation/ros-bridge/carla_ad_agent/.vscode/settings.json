@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/luo/carla-ros-bridge/install/rqt_carla_control/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_waypoint_publisher/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_ackermann_control/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_ros_bridge/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_spawn_objects/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_manual_control/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_ad_agent/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/ros_compatibility/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_waypoint_types/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_walker_agent/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_twist_to_control/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_ros_scenario_runner/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_ros_scenario_runner_types/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_ackermann_msgs/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_msgs/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_get_wheel_steer_angle/lib/python3.8/site-packages",
+        "/home/luo/carla-ros-bridge/install/carla_common/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/luo/Carla/PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg",
+        "/home/luo/Carla/PythonAPI/carla",
+        "/home/luo/Carla/PythonAPI/carla/agents",
+        "/home/luo/Carla/PythonAPI/util"
+    ]
+}

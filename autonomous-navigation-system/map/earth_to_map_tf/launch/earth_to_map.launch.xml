@@ -1,0 +1,6 @@
+<launch>
+  <arg name="param_file" default="$(find-pkg-share earth_to_map_tf)/config/earth_to_map.param.yaml"/>
+  <node pkg="earth_to_map_tf" exec="earth_to_map_tf" name="earth_to_map_tf" output="screen">
+    <param name="map_yaml_file" value="$(var param_file)"/>
+  </node>
+</launch>

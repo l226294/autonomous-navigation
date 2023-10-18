@@ -1,0 +1,10 @@
+<launch>
+  <arg name="frenet_param_file" default="$(find-pkg-share frenet_planner)/config/frenet_planner.param.yaml"/>
+  <node pkg="frenet_planner" exec="frenet_planner_node_exe" name="frenet_planner" output="both">
+    <remap from="/detected_objects" to="/perception/object_recognition/objects" />
+    <remap from="/global_route" to="/planning/trajectory" />
+    <remap from="/selected_path" to="/planning/scenario_planning/lane_driving/trajectory" />
+    <remap from="/generated_paths_marker" to="/generated_paths_marker" />
+    <param from="$(var frenet_param_file)"/>
+  </node>
+</launch>

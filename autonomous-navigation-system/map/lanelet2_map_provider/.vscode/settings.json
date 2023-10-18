@@ -1,0 +1,27 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/luo/adehome/AutowareAuto/install/vesc_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/controller_testing/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/motion_model_testing_simulator/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/lidar_integration/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/lgsvl_simulation/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/lgsvl_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/lgsvl/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/grid_map_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/benchmark_tool/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_system_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_planning_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_perception_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_mapping_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_geometry_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_debug_msgs/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_create_pkg/lib/python3.8/site-packages",
+        "/home/luo/adehome/AutowareAuto/install/autoware_auto_control_msgs/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/luo/Carla/PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg",
+        "/home/luo/Carla/PythonAPI/carla",
+        "/home/luo/Carla/PythonAPI/carla/agents",
+        "/home/luo/Carla/PythonAPI/util"
+    ]
+}

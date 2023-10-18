@@ -1,0 +1,22 @@
+<launch>
+  <!-- simulator -->
+  <include file="$(find-pkg-share carla_ros_bridge)/launch/carla_ros_bridge_with_example_ego_vehicle_autopilot_town10HD.launch.py"/>
+
+  <!-- control -->
+  <include file="$(find-pkg-share odom_to_state_conversion_nodes)/launch/odom_to_state_conversion_nodes.launch.py"/>
+  <include file="$(find-pkg-share trajectory_follower_nodes)/launch/trajectory_follower_nodes.launch.py"/>
+  <node pkg="control_transfer" exec="control_transfer" name="control_transfer" output="screen"/>
+
+  <!-- base_link tf publisher -->
+  <node pkg="tf2_ros" exec="static_transform_publisher" name="ego_vehicle_to_base_link" output="screen" args="0 0 0 0 0 0  ego_vehicle base_link"/>
+
+  <!-- map -->
+  <include file="$(find-pkg-share map_launch)/launch/map.launch.xml"/>
+
+  <!-- perception -->
+  <include file="$(find-pkg-share perception_launch)/launch/perception.launch.xml"/>
+
+  <!-- planning -->
+  <include file="$(find-pkg-share planning_launch)/launch/planning.launch.xml"/>
+
+</launch>

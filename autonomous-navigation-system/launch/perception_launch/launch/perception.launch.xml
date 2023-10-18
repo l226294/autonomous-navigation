@@ -1,0 +1,8 @@
+<launch>
+  <group>
+    <push-ros-namespace namespace="perception"/>
+    <include file="$(find-pkg-share lidar_centerpoint)/launch/lidar_centerpoint.launch.xml"/>
+    <include file="$(find-pkg-share multi_object_tracker)/launch/multi_object_tracker.launch.xml"/>
+    <include file="$(find-pkg-share map_based_prediction)/launch/map_based_prediction.launch.xml"/>
+  </group>
+</launch>

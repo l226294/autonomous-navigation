@@ -1,0 +1,8 @@
+<launch>
+  <arg name="rviz" default="true" description="launch rviz"/>
+  <arg name="rviz_config" default="$(find-pkg-share map_launch)/config/autoware.rviz" description="rviz config"/>
+  <include file="$(find-pkg-share earth_to_map_tf)/launch/earth_to_map.launch.xml"/>
+  <include file="$(find-pkg-share lanelet2_map_provider)/launch/lanelet2_map_provider.launch.py"/>
+  <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" args="-d $(var rviz_config) -s $(find-pkg-share map_launch)/config/image/autoware.png" if="$(var rviz)"/>
+  <node pkg="tf2_ros" exec="static_transform_publisher" name="map_to_viewer" output="screen" args="0 0 0 0 0 0  map viewer"/>
+</launch>

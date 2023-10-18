@@ -1,0 +1,25 @@
+#include "std_msgs/msg/Header.idl"
+
+module decision_maker_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " select scene")
+    struct Scene {
+      std_msgs::msg::Header header;
+
+      string scene;
+
+      @default (value=0.0)
+      double target_speed;
+
+      @default (value=0.0)
+      double left_bound;
+
+      @default (value=0.0)
+      double right_bound;
+
+      @default (value=0.0)
+      double distance_to_follow_vehicle;
+    };
+  };
+};

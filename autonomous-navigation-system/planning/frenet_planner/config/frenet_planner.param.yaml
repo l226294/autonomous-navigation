@@ -1,0 +1,45 @@
+/**:
+  ros__parameters:
+    global_frame: "map"
+    decision_maker: false # Enable or disable decision maker 
+    # General Settings
+    tick_t: 0.2
+
+    # collision checker
+    inner_circle_offsets: [-1.0, 1.0, 3.0]
+    inner_circle_radius: [1.5, 1.5, 1.5]
+    outer_circle_offsets: [0.0]
+    outer_circle_radius: [5.0]
+
+    lane_width: 3.5
+
+    # vehicle info
+    vehicle_width: 2.0
+
+
+    # Sampling Parameters
+    max_road_width: 7.0
+    num_width: 5              # number of road width samples
+    max_t: 5.0                # max prediction time [s]
+    min_t: 3.0                # min prediction time [s]
+    num_t: 3                  # number of time samples
+    highest_speed: 12.0        # highest target speed [m/s]
+    lowest_speed: 11.0         # lowest target speed [m/s]
+    num_speed: 3              # number of speed samples
+
+    # Hard Constraints
+    max_speed: 12.0          # maximum speed [m/s]
+    max_accel: 3.0           # maximum acceleration [m/ss]
+    max_decel: -3.0           # maximum deceleration [m/ss]
+    max_curvature: 3.0       # maximum curvature [rad/m]
+    max_jerk_s: 1.0
+    max_jerk_d: 1.0
+
+    # Cost Weights
+    k_lat_jerk: 0.1              # jerk cost weight
+    k_lon_jerk: 0.3              # jerk cost weight
+    k_time: 0.5                 # time cost weight
+    k_lat_d: 100.0                     # lateral overall cost weight
+    k_lon_speed: 3.0                 # longitudinal overall cost weight
+    k_lat: 1.0
+    k_lon: 1.0

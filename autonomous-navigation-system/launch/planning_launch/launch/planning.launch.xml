@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find-pkg-share mission_planner)/launch/mission_planner.launch.xml"/>
+  <node pkg="lane_planner" exec="lane_planner" name="lane_planner" output="screen"/>
+  <node pkg="decision_maker" exec="decision_maker" name="decision_maker" output="screen"/>
+  <include file="$(find-pkg-share frenet_planner)/launch/frenet_planner.launch.xml"/>
+  <node pkg="show_vehicle_state" exec="show_vehicle_state" name="show_vehicle_state" output="screen"/>
+ 
+</launch>
